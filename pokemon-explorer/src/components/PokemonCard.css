@@ -1,0 +1,102 @@
+/* src/components/PokemonCard.css */
+
+.pokemon-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pokemon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pokemon-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .pokemon-name {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: #E53935;
+  }
+  
+  .pokemon-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .type-badge {
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    background-color: #eee;
+    color: #333;
+  }
+  
+  /* Type colors example */
+  .type-badge.fire {
+    background-color: #FDDFDF;
+    color: #E53935;
+  }
+  
+  .type-badge.water {
+    background-color: #DEF3FD;
+    color: #039BE5;
+  }
+  
+  .type-badge.grass {
+    background-color: #DEFDE0;
+    color: #43A047;
+  }
+  
+  .type-badge.electric {
+    background-color: #FCF7DE;
+    color: #FBC02D;
+  }
+  
+  /* Add more type-specific colors if you want */
+  
+  .pokemon-details {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #43A047;
+  }
+  
+  .pokemon-details p {
+    margin: 0.2rem 0;
+  }
+  
+  .pokemon-abilities {
+    margin-top: 0.5rem;
+  }
+  
+  .pokemon-abilities h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .pokemon-abilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pokemon-abilities li {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+  
